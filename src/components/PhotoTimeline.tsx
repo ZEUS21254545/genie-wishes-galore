@@ -2,25 +2,31 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Camera, Heart, Star } from "lucide-react";
 
 export const PhotoTimeline = () => {
-  // Placeholder timeline data - user can customize
+  // Timeline data with user's photos and titles
   const timelineItems = [
     {
-      year: "Early Years",
-      title: "Our First Adventure",
+      year: "Childhood",
+      title: "Birth of Nakti",
       description: "When magic first sparkled in your eyes",
-      photo: "placeholder-childhood.jpg"
+      photo: "https://images.unsplash.com/photo-502"
     },
     {
       year: "Growing Up",
-      title: "The Day Dreams Took Flight",
-      description: "Your wishes started shaping our world",
-      photo: "placeholder-teen.jpg"
+      title: "The Don Enters",
+      description: "Your wishes started shaping our world", 
+      photo: "https://images.unsplash.com/photo-503"
+    },
+    {
+      year: "Rising",
+      title: "The Rise from Nakti to Matki",
+      description: "The genie who grants wishes with love",
+      photo: "https://images.unsplash.com/photo-504"
     },
     {
       year: "Present Day",
-      title: "Making Every Moment Magical",
-      description: "The genie who grants wishes with love",
-      photo: "placeholder-now.jpg"
+      title: "Together from Here to Infinity",
+      description: "Making every moment magical together",
+      photo: "https://images.unsplash.com/photo-505"
     }
   ];
 
@@ -28,10 +34,10 @@ export const PhotoTimeline = () => {
     <div className="space-y-8">
       <div className="text-center">
         <h2 className="text-4xl font-magical text-accent mb-4 golden-glow">
-          My Genie's Journey of Wishes
+          From Nakti to Matki to and to the HR Managing Peoples
         </h2>
         <p className="text-xl font-mystical text-muted-foreground">
-          A lifetime of magic, one wish at a time
+          My Genie's Journey
         </p>
       </div>
 
@@ -51,11 +57,12 @@ export const PhotoTimeline = () => {
               <div className="flex-1">
                 <Card className="bg-card border-border shadow-magical hover:shadow-purple-glow transition-all duration-magical">
                   <CardContent className="p-6">
-                    <div className="aspect-square bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg mb-4 flex items-center justify-center">
-                      <div className="text-center text-white">
-                        <Camera className="w-12 h-12 mx-auto mb-2" />
-                        <p className="text-sm">{item.title}</p>
-                      </div>
+                    <div className="aspect-square rounded-lg mb-4 overflow-hidden">
+                      <img 
+                        src={item.photo} 
+                        alt={item.title} 
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div className="text-center">
                       <h3 className="text-xl font-magical text-accent mb-2">{item.year}</h3>

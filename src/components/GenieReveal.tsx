@@ -24,15 +24,13 @@ export const GenieReveal = ({ isVisible }: GenieRevealProps) => {
         {/* Glow effect */}
         <div className="absolute inset-0 bg-gradient-genie rounded-full blur-3xl opacity-40 animate-pulse"></div>
         
-        {/* Sister's photo placeholder - user can replace */}
+        {/* Sister's photo */}
         <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-accent shadow-magical magical-float">
-          <div className="w-full h-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center">
-            <div className="text-center text-white">
-              <Heart className="w-16 h-16 mx-auto mb-4" />
-              <p className="text-lg font-mystical">Your Sister's Photo</p>
-              <p className="text-sm opacity-80">Upload her image here</p>
-            </div>
-          </div>
+          <img 
+            src="https://images.unsplash.com/photo-501" 
+            alt="My Genie" 
+            className="w-full h-full object-cover"
+          />
           
           {/* Magical sparkles around the photo */}
           <div className="absolute -top-4 -left-4">
@@ -54,7 +52,7 @@ export const GenieReveal = ({ isVisible }: GenieRevealProps) => {
       {showMessage && (
         <div className="text-center space-y-4 animate-scale-in">
           <h2 className="text-4xl font-magical text-accent golden-glow">
-            ✨ Your Genie Has Appeared! ✨
+            ✨ My Genie Has Appeared! ✨
           </h2>
           <p className="text-2xl font-mystical text-foreground max-w-2xl mx-auto leading-relaxed">
             "My wish-granter, my magic-maker, my greatest wish come true!"

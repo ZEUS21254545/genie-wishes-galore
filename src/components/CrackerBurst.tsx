@@ -30,7 +30,7 @@ export const CrackerBurst = () => {
         className="bg-gradient-magical hover:scale-110 transition-all duration-300 px-8 py-4 text-lg font-mystical shadow-magical"
       >
         <Gift className="w-6 h-6 mr-2" />
-        {isExploding ? "🎉 Bursting with Joy! 🎉" : "Granting a Birthday Wish!"}
+        {isExploding ? "🎉 Bursting with Joy! 🎉" : "Click for Surprise"}
       </Button>
 
       {/* Fireworks explosion overlay */}
