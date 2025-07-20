@@ -63,6 +63,23 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'gradient-magical': 'var(--gradient-magical)',
+				'gradient-starry': 'var(--gradient-starry)',
+				'gradient-genie': 'var(--gradient-genie)'
+			},
+			fontFamily: {
+				'magical': ['Cinzel', 'serif'],
+				'mystical': ['Dancing Script', 'cursive'],
+			},
+			boxShadow: {
+				'magical': 'var(--shadow-magical)',
+				'golden-glow': 'var(--glow-golden)',
+				'purple-glow': 'var(--glow-purple)'
+			},
+			transitionDuration: {
+				'magical': '600ms',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
